@@ -1,0 +1,163 @@
+@media (max-width: 1100px) {
+  .desktop-nav {
+    gap: 18px;
+  }
+
+  .nav-actions {
+    gap: 14px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 68px 0;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-features {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-visual {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    width: min(calc(100% - 32px), var(--container));
+  }
+
+  .desktop-nav,
+  .nav-actions > a,
+  .language-button {
+    display: none;
+  }
+
+  .nav-wrapper {
+    min-height: 66px;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    padding: 46px 0 64px;
+  }
+
+  h1 {
+    font-size: clamp(40px, 11vw, 58px);
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .rwa-coin {
+    width: 160px;
+    height: 160px;
+  }
+
+  .rwa-coin span {
+    font-size: 86px;
+  }
+
+  .visual-card {
+    width: 128px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: min(calc(100% - 24px), var(--container));
+  }
+
+  .brand-name {
+    font-size: 24px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    font-size: 21px;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.06;
+  }
+
+  h1 span {
+    margin-top: 10px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-visual {
+    min-height: 330px;
+  }
+
+  .platform-base {
+    width: 100%;
+  }
+
+  .rwa-coin {
+    width: 128px;
+    height: 128px;
+    border-width: 11px;
+  }
+
+  .rwa-coin span {
+    font-size: 68px;
+  }
+
+  .visual-card {
+    display: none;
+  }
+}
