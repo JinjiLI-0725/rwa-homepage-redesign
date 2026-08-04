@@ -1,0 +1,11 @@
+.DS_Store
+
+# Local audit files
+original-site-audit/
+
+# Local backups
+*.before-*.html
+*.before-*.css
+*.before-*.js
+*.hero-only-backup.html
+*.hero-only-backup.css
