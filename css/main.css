@@ -1297,3 +1297,32 @@ html[lang="zh-HK"] body {
     height: 44px;
   }
 }
+
+.official-rwa-logo {
+  display: block;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  object-fit: contain;
+}
+
+.site-footer .official-rwa-logo,
+.footer-brand .official-rwa-logo {
+  width: 48px;
+  height: 48px;
+  flex-basis: 48px;
+}
+
+header img.official-rwa-logo,
+.site-header img.official-rwa-logo,
+.header-brand img.official-rwa-logo {
+  display: block !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+  flex: 0 0 42px !important;
+  object-fit: contain !important;
+}

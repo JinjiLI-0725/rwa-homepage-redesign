@@ -809,3 +809,25 @@
     padding: 24px 20px;
   }
 }
+
+@media (max-width: 760px) {
+  .official-rwa-logo {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  header img.official-rwa-logo,
+  .site-header img.official-rwa-logo,
+  .header-brand img.official-rwa-logo {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    flex-basis: 42px !important;
+  }
+}
