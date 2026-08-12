@@ -1,367 +1,285 @@
 <!DOCTYPE html>
-
-<html lang="zh-HK">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="Responsive homepage UI redesign concept for RWA.ltd." name="description"/>
-<title>RWA.ltd — Real-World Assets On-Chain</title>
-<link href="./css/main.css" rel="stylesheet"/>
-<link href="./css/responsive.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RWA.ltd — Real-World Commerce On-Chain</title>
+
+  <link rel="stylesheet" href="css/v2.css">
 </head>
+
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<a aria-label="RWA.ltd Home" class="brand" href="#home">
-<img alt="RWA.ltd" class="official-rwa-logo header-rwa-logo" src="assets/images/rwa-logo.png"/>
-<span class="brand-wordmark">
-          rwa<small>.ltd</small>
-</span>
-</a>
-<nav aria-label="Primary navigation" class="desktop-nav">
-<a class="nav-link active" data-i18n="nav.home" href="#home">Home</a>
-<a class="nav-link" data-i18n="nav.marketplace" href="#marketplace">Marketplace</a>
-<a class="nav-link" data-i18n="nav.secondaryMarket" href="#secondary-market">Secondary Market</a>
-<a class="nav-link" data-i18n="nav.faq" href="#faq">FAQ</a>
-<a class="nav-link" data-i18n="nav.membership" href="#membership">Membership Plan</a>
-</nav>
-<div class="header-actions">
-<a class="utility-link" data-i18n="nav.orders" href="#orders">Orders</a>
-<a class="utility-link" data-i18n="nav.assets" href="#assets">Assets</a>
-<div class="language-switcher">
-<button aria-expanded="false" aria-label="Change language" class="language-button" type="button">
-<span class="language-current">繁體中文</span>
-<span aria-hidden="true">⌄</span>
-</button>
-<div class="language-menu" role="menu">
-<button data-language="en-us" type="button">English</button>
-<button data-language="zh-hk" type="button">繁體中文</button>
-<button data-language="zh-cn" type="button">简体中文</button>
-</div>
-</div>
-<a class="account-link" data-i18n="nav.account" href="#account">My Account</a>
-<button aria-expanded="false" aria-label="Open navigation" class="mobile-menu-button" type="button">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</div>
-<nav aria-label="Mobile navigation" class="mobile-menu">
-<a href="#home">Home</a>
-<a href="#marketplace">Marketplace</a>
-<a href="#secondary-market">Secondary Market</a>
-<a href="#assets">Assets</a>
-<a href="#membership">Membership Plan</a>
-<a href="#faq">FAQ</a>
-<a href="#orders">Orders</a>
-<a href="#account">My Account</a>
-</nav>
+
+<header class="header">
+  <a class="brand" href="#home">
+    <img src="assets/images/rwa-logo.png" alt="RWA.ltd">
+    <strong>rwa<small>.ltd</small></strong>
+  </a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="menu-button" aria-label="Menu">
+    ☰
+  </button>
 </header>
+
+
 <main>
-<section class="hero-section" id="home">
-<div class="container hero-layout">
-<div class="hero-content">
-<p class="eyebrow" data-i18n="hero.eyebrow">RWA.LTD PLATFORM</p>
-<h1 class="hero-title">
-<span class="hero-title-main" data-i18n="hero.titleMain">
-              Connecting Products, Services and Consumer Rights
-            </span>
-<span data-i18n="hero.titleAccent">On-Chain Circulation.</span>
-</h1>
-<p class="hero-description" data-i18n="hero.description">
-            RWA.ltd provides customised non-financial brand token solutions,
-            connecting real-world commerce with token-based circulation and
-            consumer participation.
-          </p>
-<div class="hero-buttons">
-<a class="button button-primary" href="#marketplace">
-<span data-i18n="hero.marketplaceButton">Explore Marketplace</span>
-<span aria-hidden="true">→</span>
-</a>
-<a class="button button-outline" href="#issuers">
-<span data-i18n="hero.brandButton">For Brands</span>
-<span aria-hidden="true">→</span>
-</a>
-</div>
-<div class="hero-highlights">
-<article>
-<strong data-i18n="hero.compliance">Compliance</strong>
-<small data-i18n="hero.complianceText">Transparent and trusted</small>
-</article>
-<article>
-<strong data-i18n="hero.realCommerce">Real Commerce</strong>
-<small data-i18n="hero.realCommerceText">Connected to products and services</small>
-</article>
-<article>
-<strong data-i18n="hero.efficient">Efficient</strong>
-<small data-i18n="hero.efficientText">Built for token circulation</small>
-</article>
-<article>
-<strong data-i18n="hero.consumer">Consumer Focus</strong>
-<small data-i18n="hero.consumerText">Designed around user rights</small>
-</article>
-</div>
-</div>
-<div aria-label="RWA platform visual" class="hero-art"><img alt="RWA.ltd token ecosystem" class="hero-ecosystem-image" decoding="async" fetchpriority="high" height="900" src="./assets/images/rwa-hero-ecosystem.png" width="1600"/></div>
-</div>
+
+<section class="hero" id="home">
+
+  <div class="hero-copy">
+
+    <span class="eyebrow">
+      RWA.LTD
+    </span>
+
+    <h1>
+      Connecting Real-World Commerce
+      <em>On-Chain.</em>
+    </h1>
+
+    <p>
+      RWA.ltd connects brands, products, services and real-world
+      commercial value with blockchain infrastructure.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button primary" href="#solutions">
+        Explore Solutions
+      </a>
+
+      <a class="button secondary" href="#about">
+        Discover RWA.ltd
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+
+    <div class="logo-core">
+      <img src="assets/images/rwa-logo.png" alt="">
+    </div>
+
+    <span class="node node-1">BRANDS</span>
+    <span class="node node-2">COMMERCE</span>
+    <span class="node node-3">ON-CHAIN</span>
+
+  </div>
+
 </section>
-<section class="quick-access-section" id="marketplace">
-<div class="container">
-<div class="section-heading">
-<div>
-<p class="section-kicker" data-i18n="quick.kicker">PLATFORM ACCESS</p>
-<h2 data-i18n="quick.title">Quick Access</h2>
-</div>
-<a class="section-link" href="#more"><span data-i18n="common.exploreMore">Explore More</span> →</a>
-</div>
-<div class="quick-access-grid">
-<a class="access-card quick-access-card" href="#marketplace">
-<span class="access-icon quick-access-icon polished-svg-icon"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="M5 8h14l-1 12H6L5 8Z"></path>
-<path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
-</svg></span>
-<div>
-<strong data-i18n="nav.marketplace">Marketplace</strong>
-<p data-i18n="quick.marketplaceText">Discover products, services and token-based consumer rights.</p>
-</div>
-<span class="access-arrow">→</span>
-</a>
-<a class="access-card quick-access-card" href="#secondary-market" id="secondary-market">
-<span class="access-icon quick-access-icon polished-svg-icon"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="M7 7h11l-2.5-2.5"></path>
-<path d="M18 7 15.5 9.5"></path>
-<path d="M17 17H6l2.5 2.5"></path>
-<path d="M6 17 8.5 14.5"></path>
-</svg></span>
-<div>
-<strong data-i18n="nav.secondaryMarket">Secondary Market</strong>
-<p data-i18n="quick.secondaryText">Access the existing platform for secondary circulation.</p>
-</div>
-<span class="access-arrow">→</span>
-</a>
-<a class="access-card quick-access-card" href="#assets" id="assets">
-<span class="access-icon quick-access-icon polished-svg-icon"><svg aria-hidden="true" viewbox="0 0 24 24">
-<ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-<path d="M5 6v5c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
-<path d="M5 11v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5"></path>
-</svg></span>
-<div>
-<strong data-i18n="nav.assets">Assets</strong>
-<p data-i18n="quick.assetsText">View and manage available platform assets.</p>
-</div>
-<span class="access-arrow">→</span>
-</a>
-<a class="access-card quick-access-card" href="#membership" id="membership">
-<span class="access-icon quick-access-icon polished-svg-icon"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"></path>
-</svg></span>
-<div>
-<strong data-i18n="nav.membership">Membership Plan</strong>
-<p data-i18n="quick.membershipText">Learn about membership rights and benefits.</p>
-</div>
-<span class="access-arrow">→</span>
-</a>
-</div>
-</div>
+
+
+<section class="statement" id="about">
+
+  <span class="eyebrow">ABOUT RWA.LTD</span>
+
+  <h2>
+    Bridging physical commerce
+    and the digital economy.
+  </h2>
+
+  <p>
+    We build practical connections between real-world commercial
+    activity and blockchain technology — helping brands bring products,
+    services and consumer ecosystems into the digital economy.
+  </p>
+
 </section>
-<section class="featured-section">
-<div class="container">
-<div class="section-heading">
-<div>
-<p class="section-kicker" data-i18n="tokens.kicker">CURRENT PLATFORM PROJECTS</p>
-<h2 data-i18n="tokens.title">Featured Tokens</h2>
-</div>
-<a class="section-link" href="#all-tokens"><span data-i18n="common.viewAll">View All</span> →</a>
-</div>
-<div class="token-grid">
-<article class="token-card">
-<div class="token-identity">
-<span class="token-logo token-logo-ht"><img alt="HT Health Token" class="token-logo-image" decoding="async" height="64" loading="lazy" src="./assets/tokens/token-ht.png" width="64"/></span>
-<div>
-<h3>HT Health Token</h3>
-<p>HT</p>
-</div>
-</div>
-<a href="#ht-token"><span data-i18n="common.viewDetails">View Details</span></a>
-</article>
-<article class="token-card">
-<div class="token-identity">
-<span class="token-logo token-logo-rwa"><img alt="RWA Token" class="token-logo-image" decoding="async" height="64" loading="lazy" src="./assets/tokens/token-rwa.png" width="64"/></span>
-<div>
-<h3>RWA Token</h3>
-<p>RWA</p>
-</div>
-</div>
-<a href="#rwa-token"><span data-i18n="common.viewDetails">View Details</span></a>
-</article>
-<article class="token-card">
-<div class="token-identity">
-<span class="token-logo token-logo-dimd"><img alt="DIMD Token" class="token-logo-image" decoding="async" height="64" loading="lazy" src="./assets/tokens/token-dimd.png" width="64"/></span>
-<div>
-<h3>DIMD Token</h3>
-<p>DIMD</p>
-</div>
-</div>
-<a href="#dimd-token"><span data-i18n="common.viewDetails">View Details</span></a>
-</article>
-<article class="token-card">
-<div class="token-identity">
-<span class="token-logo token-logo-top100"><img alt="TOP100 Token" class="token-logo-image" decoding="async" height="64" loading="lazy" src="./assets/tokens/token-top100.png" width="64"/></span>
-<div>
-<h3>TOP100 Token</h3>
-<p>TOP100</p>
-</div>
-</div>
-<a href="#top100-token"><span data-i18n="common.viewDetails">View Details</span></a>
-</article>
-<article class="token-card">
-<div class="token-identity">
-<span class="token-logo token-logo-gct"><img alt="GCT Token" class="token-logo-image" decoding="async" height="64" loading="lazy" src="./assets/tokens/token-gct.png" width="64"/></span>
-<div>
-<h3>GCT Token</h3>
-<p>GCT</p>
-</div>
-</div>
-<a href="#gct-token"><span data-i18n="common.viewDetails">View Details</span></a>
-</article>
-</div>
-</div>
+
+
+<section class="section grey" id="solutions">
+
+  <div class="section-heading">
+    <span class="eyebrow">WHAT WE DO</span>
+    <h2>Solutions for real-world digital commerce.</h2>
+  </div>
+
+
+  <div class="cards">
+
+    <article>
+      <span>01</span>
+      <h3>Brand Digitalisation</h3>
+      <p>
+        Digital representations for brands, products,
+        services and commercial rights.
+      </p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>Real-World Commerce</h3>
+      <p>
+        Connect blockchain infrastructure with real products
+        and commercial experiences.
+      </p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>Blockchain Infrastructure</h3>
+      <p>
+        Technology infrastructure designed for practical
+        commercial deployment.
+      </p>
+    </article>
+
+    <article>
+      <span>04</span>
+      <h3>Consumer Ecosystem</h3>
+      <p>
+        Build stronger connections between brands,
+        consumers and digital communities.
+      </p>
+    </article>
+
+  </div>
+
 </section>
-<section class="platform-value-section" id="issuers">
-<div class="container">
-<div class="section-heading centered-heading">
-<div>
-<p class="section-kicker" data-i18n="value.kicker">PLATFORM VALUE</p>
-<h2 data-i18n="value.title">Built for Brands and Consumers</h2>
-</div>
-</div>
-<div class="value-grid">
-<article class="value-card issuer-card">
-<div class="value-copy">
-<p class="section-kicker" data-i18n="value.forBrands">FOR BRANDS</p>
-<h3 data-i18n="value.brandTitle">Connect Brand Commerce On-Chain</h3>
-<ul>
-<li data-i18n="value.brandPoint1">Create customised non-financial brand token solutions</li>
-<li data-i18n="value.brandPoint2">Connect products, services and consumer rights</li>
-<li data-i18n="value.brandPoint3">Build transparent and manageable brand communities</li>
-</ul>
-<a href="#issue-assets"><span data-i18n="value.brandLink">For Brands</span> →</a>
-</div>
-<div aria-hidden="true" class="value-graphic bank-graphic">
-<span class="bank-roof"></span>
-<span class="bank-column bank-column-one"></span>
-<span class="bank-column bank-column-two"></span>
-<span class="bank-column bank-column-three"></span>
-<span class="bank-base"></span>
-</div>
-</article>
-<article class="value-card user-card">
-<div class="value-copy">
-<p class="section-kicker" data-i18n="value.forConsumers">FOR CONSUMERS</p>
-<h3 data-i18n="value.consumerTitle">Explore Products and Consumer Rights</h3>
-<ul>
-<li data-i18n="value.consumerPoint1">Access current platform products and services</li>
-<li data-i18n="value.consumerPoint2">Review token and product information transparently</li>
-<li data-i18n="value.consumerPoint3">Participate through the existing RWA ecosystem</li>
-</ul>
-<a href="#explore-assets"><span data-i18n="value.consumerLink">Start Exploring</span> →</a>
-</div>
-<div aria-hidden="true" class="value-graphic users-graphic">
-<span class="user-shape user-shape-back"></span>
-<span class="user-shape user-shape-front"></span>
-<span class="users-base"></span>
-</div>
-</article>
-</div>
-</div>
+
+
+<section class="section" id="ecosystem">
+
+  <div class="section-heading">
+    <span class="eyebrow">RWA ECOSYSTEM</span>
+    <h2>From real-world value to on-chain commerce.</h2>
+  </div>
+
+
+  <div class="flow">
+
+    <div>
+      <strong>01</strong>
+      <h3>Real-World Value</h3>
+      <p>Brands, products and services.</p>
+    </div>
+
+    <i></i>
+
+    <div>
+      <strong>02</strong>
+      <h3>Digital Representation</h3>
+      <p>Structure commercial value digitally.</p>
+    </div>
+
+    <i></i>
+
+    <div>
+      <strong>03</strong>
+      <h3>Blockchain Layer</h3>
+      <p>Connect value with blockchain infrastructure.</p>
+    </div>
+
+    <i></i>
+
+    <div>
+      <strong>04</strong>
+      <h3>Commercial Ecosystem</h3>
+      <p>Bring digital value back into real commerce.</p>
+    </div>
+
+  </div>
+
 </section>
-<section class="closing-section" id="faq">
-<div class="container closing-card">
-<div>
-<p class="section-kicker">RWA.LTD</p>
-<h2 data-i18n="closing.title">Explore the RWA.ltd Platform</h2>
-<p data-i18n="closing.description">
-            Explore the marketplace or learn more about customised
-            non-financial brand token solutions.
-          </p>
-</div>
-<div class="closing-buttons">
-<a class="button closing-primary" data-i18n="hero.marketplaceButton" href="#marketplace">
-            Explore Marketplace
-          </a>
-<a class="button closing-secondary" data-i18n="hero.brandButton" href="#issuers">
-            For Brands
-          </a>
-</div>
-</div>
+
+
+<section class="section grey" id="projects">
+
+  <div class="section-heading">
+    <span class="eyebrow">REPRESENTATIVE PROJECTS</span>
+    <h2>Selected ecosystem projects.</h2>
+  </div>
+
+
+  <div class="projects">
+
+    <article>
+      <img src="assets/tokens/token-ht.png" alt="">
+      <strong>HT Health Token</strong>
+      <span>HT</span>
+    </article>
+
+    <article>
+      <img src="assets/tokens/token-rwa.png" alt="">
+      <strong>RWA Token</strong>
+      <span>RWA</span>
+    </article>
+
+    <article>
+      <img src="assets/tokens/token-dimd.png" alt="">
+      <strong>DIMD Token</strong>
+      <span>DIMD</span>
+    </article>
+
+    <article>
+      <img src="assets/tokens/token-top100.png" alt="">
+      <strong>TOP100 Token</strong>
+      <span>TOP100</span>
+    </article>
+
+    <article>
+      <img src="assets/tokens/token-gct.png" alt="">
+      <strong>GCT Token</strong>
+      <span>GCT</span>
+    </article>
+
+  </div>
+
 </section>
+
+
+<section class="contact" id="contact">
+
+  <span class="eyebrow">CONNECT WITH RWA.LTD</span>
+
+  <h2>
+    Build the next generation
+    of real-world digital commerce.
+  </h2>
+
+  <a href="mailto:contact@rwa.ltd">
+    Contact Us ↗
+  </a>
+
+</section>
+
 </main>
-<footer class="site-footer">
-<div class="container footer-grid">
-<div class="footer-brand-column">
-<a class="brand" href="#home">
-<img alt="RWA.ltd" class="official-rwa-logo" src="assets/images/rwa-logo.png"/>
-<span class="brand-wordmark">
-            rwa<small>.ltd</small>
-</span>
-</a>
-<p data-i18n="footer.description">
-          RWA.ltd supports non-financial brand tokenisation and connects
-          products, services and consumer rights through blockchain technology.
-        </p>
-<small>
-          © <span id="currentYear"></span> RWA Group Limited.
-          All rights reserved.
-        </small>
-</div>
-<div class="footer-column">
-<h3 data-i18n="footer.products">Products</h3>
-<a data-i18n="nav.marketplace" href="#marketplace">Marketplace</a>
-<a data-i18n="nav.secondaryMarket" href="#secondary-market">Secondary Market</a>
-<a data-i18n="nav.assets" href="#assets">Assets</a>
-</div>
-<div class="footer-column">
-<h3 data-i18n="footer.support">Support</h3>
-<a data-i18n="nav.faq" href="#faq">FAQ</a>
-<a data-i18n="footer.helpCenter" href="#help">Help Center</a>
-</div>
-<div class="footer-column">
-<h3 data-i18n="footer.about">About</h3>
-<a data-i18n="nav.membership" href="#membership">Membership Plan</a>
-<a data-i18n="footer.aboutRwa" href="#about">About RWA.ltd</a>
-</div>
-<div class="footer-column">
-<h3 data-i18n="footer.more">More</h3>
-<a data-i18n="nav.orders" href="#orders" id="orders">Orders</a>
-<a data-i18n="nav.account" href="#account" id="account">My Account</a>
-</div>
-</div>
+
+
+<footer>
+
+  <div class="brand">
+    <img src="assets/images/rwa-logo.png" alt="RWA.ltd">
+    <strong>rwa<small>.ltd</small></strong>
+  </div>
+
+  <p>
+    Connecting real-world commerce with blockchain technology.
+  </p>
+
+  <small>
+    © 2026 RWA Group Limited. All rights reserved.
+  </small>
+
 </footer>
-<nav aria-label="Mobile bottom navigation" class="mobile-bottom-nav">
-<a class="active" href="#home"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="m4 11 8-7 8 7"></path>
-<path d="M6.5 10.5V20h11v-9.5"></path>
-<path d="M10 20v-6h4v6"></path>
-</svg><span data-i18n="mobileNav.home">Home</span></a>
-<a href="#marketplace"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="M5 8h14l-1 12H6L5 8Z"></path>
-<path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
-</svg><span data-i18n="mobileNav.marketplace">Marketplace</span></a>
-<a href="#assets"><svg aria-hidden="true" viewbox="0 0 24 24">
-<ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-<path d="M5 6v5c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
-<path d="M5 11v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5"></path>
-</svg><span data-i18n="mobileNav.assets">Assets</span></a>
-<a href="#orders"><svg aria-hidden="true" viewbox="0 0 24 24">
-<path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3Z"></path>
-<path d="M9 8h6M9 12h6M9 16h4"></path>
-</svg><span data-i18n="mobileNav.orders">Orders</span></a>
-<a href="#account"><svg aria-hidden="true" viewbox="0 0 24 24">
-<circle cx="12" cy="8" r="4"></circle>
-<path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path>
-</svg><span data-i18n="mobileNav.account">Account</span></a>
-</nav>
-<script src="./js/main.js?v=20260804-i18n-2"></script>
+
+
+<script src="js/v2.js"></script>
+
 </body>
 </html>
