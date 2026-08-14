@@ -23,17 +23,18 @@ footer{position:relative;display:grid;grid-template-columns:1.5fr repeat(4,1fr);
   .desktop-nav a{padding:25px 0 22px}
 
   .hero{
-    min-height:620px;
-    height:min(72vh,690px);
+    min-height:720px;
+    height:auto;
     grid-template-columns:minmax(440px,.86fr) minmax(540px,1.14fr);
+    align-items:start;
     padding-top:98px;
-    padding-bottom:38px;
+    padding-bottom:48px;
     background:#fbfaf8;
   }
-  .hero h1{max-width:680px;font-size:clamp(40px,3.45vw,56px);line-height:1.07}
-  .hero-copy{padding-bottom:4px}
+  .hero h1{max-width:680px;font-size:clamp(39px,3.15vw,51px);line-height:1.07}
+  .hero-copy{align-self:start;padding-top:42px;padding-bottom:10px}
   .hero-media{
-    align-self:stretch;
+    align-self:center;
     display:flex;
     align-items:center;
     margin-right:calc(clamp(28px,4vw,72px) * -1);
