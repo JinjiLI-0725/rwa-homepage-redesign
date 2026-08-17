@@ -964,3 +964,7 @@ body.contact-v2{--contact-red:#d5202d;--contact-ink:#111;--contact-muted:#666;--
 @media(max-width:1050px){.contact-intro-grid{grid-template-columns:42% 58%;gap:35px}.contact-pathways article{padding:4px 18px}.contact-enquiry{grid-template-columns:45% 55%}.contact-form-v2{padding-inline:38px}}
 @media(max-width:760px){.contact-intro{min-height:0}.contact-intro-grid{display:block!important;padding-block:48px}.contact-pathways{margin-top:42px;grid-template-columns:1fr}.contact-pathways article{min-height:0;padding:18px 0;border-left:0;border-top:1px solid var(--contact-line)}.contact-enquiry{display:block!important;border-inline:0}.contact-visual{height:500px;border-right:0;border-bottom:1px solid var(--contact-line)}.contact-form-v2{padding:42px 24px;display:block}.contact-process>.shell{display:block!important;padding-block:25px}.contact-process article{min-height:0;padding:22px 0;border-right:0;border-bottom:1px solid var(--contact-line)}.contact-process article:last-child{border-bottom:0}.contact-footer-v2{padding-block:25px;gap:20px;flex-wrap:wrap}.contact-footer-v2>span{order:3;width:100%}}
 @media(max-width:480px){.contact-intro-copy h1{font-size:38px!important}.contact-visual{height:440px}.contact-token-wrap{transform:translate(-50%,-50%) scale(.82)}}
+
+/* Documents & Trust moved from Home: three equal destination cards */
+.resource-grid.resource-grid-documents{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:760px){.resource-grid.resource-grid-documents{grid-template-columns:1fr}}
