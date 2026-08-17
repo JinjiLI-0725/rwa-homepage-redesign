@@ -794,3 +794,43 @@ body.crwa .site-footer a{color:#666!important}
   body.crwa .rights-scene{height:390px;margin-top:24px;transform:scale(.58);width:170%;transform-origin:left top}
   body.crwa .site-footer{height:auto!important;min-height:90px!important;padding:24px 0!important}
 }
+
+/* Consumer RWA — approved hero media */
+body.crwa .rights-scene{
+  width:100%;
+  height:auto;
+  margin:0;
+  transform:none;
+  overflow:hidden;
+  align-self:center;
+  position:relative;
+}
+body.crwa .rights-scene:before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:12%;
+  z-index:2;
+  pointer-events:none;
+  background:linear-gradient(90deg,var(--paper) 0,rgba(250,250,249,.82) 36%,transparent 100%);
+}
+body.crwa .rights-scene img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:570px;
+  object-fit:contain;
+  object-position:center;
+  mix-blend-mode:multiply;
+}
+body.crwa .hero{
+  min-height:650px;
+  grid-template-columns:38% 62%;
+  padding-block:46px 54px;
+}
+body.crwa .hero-copy{padding-right:34px}
+body.crwa .hero h1{font-size:clamp(40px,3vw,54px)!important}
+@media(max-width:760px){
+  body.crwa .rights-scene{width:118%;margin-left:-9%;height:auto}
+  body.crwa .rights-scene img{max-height:none}
+}
