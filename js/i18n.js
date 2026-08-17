@@ -1,0 +1,80 @@
+(() => {
+  const ZH = {
+    "Home":"首頁","Consumer RWA":"消費級 RWA","Ecosystem":"生態系統","News":"新聞","Contact":"聯絡我們","Menu":"選單",
+    "RWA.LTD · CONSUMER RWA INFRASTRUCTURE":"RWA.LTD · 消費級 RWA 基礎設施","Connecting Real-World Assets":"連接現實世界資產","On-Chain Circulation ·":"鏈上流通 ·","Creating Platform Value":"創造平台價值",
+    "RWA.LTD connects real goods, services and commercial rights with transparent digital representation, on-chain circulation and real-world fulfilment.":"RWA.LTD 透過透明的數位化表達、鏈上流通與現實履約，連接實體商品、服務及商業權益。",
+    "Explore Consumer RWA":"探索消費級 RWA","Watch the Film":"觀看影片","PRODUCTS & BRANDS":"產品與品牌","COMMERCE":"商業","FULFILMENT":"履約",
+    "ABOUT RWA.LTD":"關於 RWA.LTD","Infrastructure for the future":"面向未來的基礎設施","of":"服務於","real-world digital commerce.":"現實世界數位商業。",
+    "RWA.LTD is a Consumer RWA platform that helps brands, project owners and merchants issue, circulate and redeem digital commercial rights backed by real-world assets and services.":"RWA.LTD 是一個消費級 RWA 平台，協助品牌、項目方及商戶發行、流通和兌現由現實資產與服務支持的數位商業權益。",
+    "We connect project structure, digital deployment, communication, platform circulation and fulfilment within one coherent lifecycle.":"我們在同一完整生命週期內連接項目架構、數位部署、品牌傳播、平台流通與履約。",
+    "Discover our model":"了解我們的模式","REAL VALUE":"真實價值","DIGITAL RIGHTS":"數位權益","CONNECTED COMMERCE":"互聯商業","CONSUMER RWA MODEL":"消費級 RWA 模式",
+    "From physical goods and services to":"從實體商品與服務到","manageable digital rights.":"可管理的數位權益。","Real Commercial Value":"真實商業價值","Goods, services, memberships and benefits grounded in real commerce.":"以真實商業為基礎的商品、服務、會籍與權益。",
+    "Digital Representation":"數位化表達","Rights represented digitally with clear rules and verifiable project materials.":"以清晰規則及可驗證項目資料將權益數位化。",
+    "Circulation & Redemption":"流通與兌現","Connected circulation with a route back to real products and services.":"打通流通渠道，並可回到真實產品與服務。",
+    "SOLUTIONS":"解決方案","From idea to issuance,":"從構想到發行，","circulation and redemption.":"再到流通與兌現。","Explore the lifecycle":"探索完整生命週期",
+    "Issuance &":"發行與","Redemption Design":"兌現設計","Token rules, rights structure and redemption logic.":"代幣規則、權益架構與兌現邏輯。","Core Project":"核心項目","Materials":"資料","Whitepapers, project guides and essential documentation.":"白皮書、項目指南及必要文件。",
+    "Blockchain":"區塊鏈","Deployment":"部署","Secure, scalable deployment aligned with the project model.":"配合項目模式進行安全、可擴展的部署。","Launch & Brand":"發布與品牌","Communication":"傳播","Go-to-market storytelling and project communication.":"市場發布敘事與項目傳播。",
+    "Platform":"平台","Circulation":"流通","Connections across platforms, users and commerce channels.":"連接平台、用戶與商業渠道。","Redemption &":"兌現與","Real-world delivery, service access and benefit fulfilment.":"現實世界交付、服務使用及權益履約。",
+    "Real Goods & Services":"真實商品與服務","Digital Rights":"數位權益","Issuance":"發行","Redemption":"兌現","ANIMATED PLATFORM FILM":"平台動態影片","RWA.LTD Platform":"RWA.LTD 平台","Driving Real Value On-Chain.":"推動真實價值上鏈。",
+    "See how real-world assets move from definition and issuance to circulation and fulfilment.":"了解現實世界資產如何從定義與發行走向流通及履約。","RWA.LTD / PLATFORM FILM":"RWA.LTD / 平台影片",
+    "SELECTED ECOSYSTEM PROJECTS":"精選生態項目","Real projects.":"真實項目。","Real commercial value.":"真實商業價值。","View the ecosystem":"查看生態系統","Health & Wellness":"健康與生活","Explore ↗":"探索 ↗","Platform Ecosystem":"平台生態","Jewellery & Digital Rights":"珠寶與數位權益","Media & Services":"媒體與服務","Consumer Goods":"消費品",
+    "DOCUMENTS & TRUST":"文件與信任","White Paper":"白皮書","Platform vision, structure and operating model.":"平台願景、架構及營運模式。","Project Guide":"項目指南","A practical guide for brands and project teams.":"面向品牌與項目團隊的實用指南。","Compliance & Legal Notes":"合規與法律說明","Project information, risk and compliance notes.":"項目資訊、風險及合規說明。","Build the next generation of":"共建下一代","Discuss Your Project":"洽談您的項目","Connecting real-world commerce with digital infrastructure.":"連接現實商業與數位基礎設施。",
+    "COMPANY":"公司","About":"關於我們","Projects":"項目","Issuance & Redemption":"發行與兌現","Platform Circulation":"平台流通","RESOURCES":"資源","Developer Guide":"開發者指南","Documentation":"技術文件","CONTACT":"聯絡我們","Hong Kong":"香港","© 2026 RWA.LTD. All rights reserved.":"© 2026 RWA.LTD. 版權所有。",
+    "Real commerce.":"真實商業。","Digital rights.":"數位權益。","One":"一個","connected lifecycle.":"互聯的生命週期。","RWA.LTD connects real goods and services with identifiable digital commercial rights that can be issued, circulated and redeemed.":"RWA.LTD 將真實商品與服務連接至可識別、可發行、可流通及可兌現的數位商業權益。",
+    "Lifecycle":"生命週期","How Consumer RWA works":"消費級 RWA 如何運作","A physical item, service or commercial entitlement is verified and represented digitally.":"實體商品、服務或商業權益經核驗後，以數位形式呈現。","Ownership":"所有權","The right is assigned to its owner and recorded through verifiable infrastructure.":"權益分配予持有人，並透過可驗證基礎設施記錄。","Transfer":"轉移","Ownership can move securely with a clear and traceable record of provenance.":"所有權可安全轉移，並保留清晰可追溯的來源記錄。","The right can be redeemed to unlock a product, service or real-world utility.":"權益可兌現為產品、服務或現實用途。",
+    "Built for consumer trust":"為消費者信任而設","Verifiable. Portable.":"可驗證、可攜帶。","Redeemable.":"可兌現。","Cryptographically verifiable ownership":"以密碼學驗證所有權","Portable across supported platforms and jurisdictions":"可跨支援的平台與司法管轄區使用","Redeemable for real-world utility and experiences":"可兌現現實用途與體驗","Real value. Real utilities":"真實價值，真實用途","Unlock more from":"釋放更多","what you own.":"您所擁有的價值。","Connect commercial rights with loyalty, warranties, memberships, upgrades and other real-world utility.":"將商業權益連接至忠誠計劃、保養、會籍、升級及其他現實用途。","Learn how it works":"了解運作方式",
+    "Developer & integrator resources":"開發者與整合商資源","Core concepts and integration patterns.":"核心概念與整合模式。","Smart Contract Docs":"智能合約文件","Contract interfaces, standards and examples.":"合約介面、標準與範例。","API Reference":"API 參考","Issuance, transfer and redemption services.":"發行、轉移及兌現服務。","Need access or support?":"需要接入或支援？","Our team partners with platforms, brands and infrastructure providers.":"我們的團隊與平台、品牌及基礎設施供應商合作。","Contact us":"聯絡我們","© RWA.LTD. All rights reserved.":"© RWA.LTD. 版權所有。","Privacy Policy":"私隱政策","Terms of Use":"使用條款",
+    "RWA.LTD ECOSYSTEM":"RWA.LTD 生態系統","One ecosystem.":"一個生態系統。","Real projects.":"真實項目。","Connected value.":"互聯價值。","RWA.LTD connects project owners, digital infrastructure, platforms, commerce and fulfilment.":"RWA.LTD 連接項目方、數位基礎設施、平台、商業與履約。","Explore the ecosystem":"探索生態系統","PLATFORM TOKEN":"平台代幣","Connected infrastructure":"互聯基礎設施","Project owners":"項目方","Infrastructure":"基礎設施","Platforms":"平台","Commerce":"商業","Fulfilment":"履約",
+    "HOW VALUE MOVES":"價值如何流動","From project to real-world utility.":"從項目走向現實用途。","One connected path from the underlying opportunity to circulation and fulfilment.":"以一條互聯路徑，將底層機會連接至流通與履約。","Project":"項目","Real-world value identified.":"識別現實世界價值。","Structure":"架構","Rights and rules defined.":"定義權益與規則。","Issue":"發行","Digital representation issued.":"發行數位化權益。","Circulate":"流通","Connected across platforms.":"連接不同平台。","Redeem":"兌現","Utility returns to the real world.":"用途回到現實世界。",
+    "RWA TOKEN / PLATFORM TOKEN":"RWA 代幣 / 平台代幣","The connective layer":"連接整個生態的","of the ecosystem.":"核心層。","The RWA token represents the platform layer connecting participating projects, infrastructure and circulation channels.":"RWA 代幣代表平台層，連接參與項目、基礎設施及流通渠道。","Connect with RWA.LTD":"連接 RWA.LTD","Ecosystem coordination":"生態協調","Connect projects with shared infrastructure.":"以共享基礎設施連接項目。","Platform participation":"平台參與","Support participation across the RWA.LTD network.":"支援參與 RWA.LTD 網絡。","Connected utility":"互聯用途","Link circulation with real-world fulfilment.":"連接流通與現實履約。",
+    "SELECTED PROJECTS":"精選項目","Projects within the ecosystem.":"生態系統中的項目。","Real project tokens connected through the RWA.LTD platform ecosystem.":"透過 RWA.LTD 平台生態連接真實項目代幣。","01 / ECOSYSTEM PROJECT":"01 / 生態項目","02 / ECOSYSTEM PROJECT":"02 / 生態項目","03 / ECOSYSTEM PROJECT":"03 / 生態項目","04 / ECOSYSTEM PROJECT":"04 / 生態項目","Explore":"探索","BUILD WITH RWA.LTD":"與 RWA.LTD 共建","Build within":"在生態系統內","the ecosystem.":"共同建設。","Connect your project with the infrastructure, platforms and channels needed to move from real-world value to real-world utility.":"將您的項目連接至所需的基礎設施、平台與渠道，推動真實價值走向現實用途。","GET IN TOUCH":"聯絡我們",
+    "CONTACT RWA.LTD":"聯絡 RWA.LTD","Let’s build real-world":"讓我們共同創造","value together.":"真實世界價值。","Connect your project with RWA.LTD infrastructure, platforms and ecosystem.":"將您的項目連接至 RWA.LTD 的基礎設施、平台與生態系統。","Project enquiry":"項目諮詢","Explore opportunities for real-world projects.":"探索現實世界項目的合作機會。","Platform integration":"平台整合","Connect with RWA.LTD infrastructure and platforms.":"接入 RWA.LTD 基礎設施與平台。","General contact":"一般查詢","Reach out to our team for general enquiries.":"就一般查詢聯絡我們的團隊。","Start a conversation":"開始對話","Tell us about your project.":"告訴我們您的項目。","We’ll connect you with the right team.":"我們會安排合適的團隊與您聯絡。","Name":"姓名","Company / Project":"公司 / 項目","Email":"電郵","Region":"地區","Select region":"選擇地區","Mainland China":"中國內地","Asia Pacific":"亞太地區","Europe":"歐洲","North America":"北美洲","Other":"其他","What are you looking to build?":"您希望建設甚麼？","Send enquiry":"提交查詢","By submitting an enquiry, you agree that RWA.LTD may contact you regarding your request.":"提交查詢即表示您同意 RWA.LTD 就您的需求與您聯絡。","Tell us about the project":"介紹您的項目","Share your goals and key requirements.":"分享您的目標與主要需求。","We review the opportunity":"我們評估合作機會","Our team considers how RWA.LTD can support the initiative.":"我們的團隊將評估 RWA.LTD 如何支援此項目。","Continue the conversation":"繼續溝通","We connect to explore the next steps together.":"我們將與您聯絡，共同探討下一步。"
+  };
+  const traditionalMap = {"简":"簡","体":"體","页":"頁","费":"費","级":"級","现":"現","实":"實","产":"產","资":"資","链":"鏈","创":"創","连":"連","数":"數","权":"權","发":"發","项":"項","与":"與","营":"營","务":"務","为":"為","从":"從","验":"驗","证":"證","规":"規","则":"則","兑":"兌","过":"過","动":"動","观":"觀","统":"統","络":"絡","价":"價","础":"礎","设":"設","业":"業","历":"歷","拥":"擁","转":"轉","录":"錄","归":"歸","属":"屬","阅":"閱","档":"檔","隐":"隱","条":"條","联":"聯","系":"繫","问":"問","询":"詢","择":"擇","亚":"亞","欧":"歐","区":"區","华":"華","际":"際","开":"開","关":"關","内":"內","沟":"溝","构":"構","护":"護","应":"應","参":"參","网":"網","层":"層","结":"結","传":"傳","递":"遞","复":"復","杂":"雜","储":"儲","拟":"擬","写":"寫","导":"導","读":"讀","识":"識","别":"別","积":"積","极":"極","标":"標","题":"題","签":"簽","选":"選","单":"單","户":"戶","这":"這","个":"個","会":"會","将":"將","进":"進","对":"對","话":"話","团":"團","队":"隊","协":"協","调":"調","续":"續","习":"習","经":"經","济":"濟","马":"馬","国":"國","么":"麼","术":"術","汇":"匯","众":"眾","运":"運","达":"達","争":"爭","场":"場","径":"徑","响":"響","办":"辦","较":"較","销":"銷","启":"啟","类":"類","据":"據","范":"範","机":"機","态":"態","讯":"訊","说":"說","险":"險","扩":"擴","币":"幣","撑":"撐","领":"領","周":"週"};
+  const toSimplified = (s) => {
+    const phrase = {"聯絡":"联系","私隱":"隐私","會籍":"会员资格","項目方":"项目方","消費級":"消费级","數位":"数字","兌現":"兑换","履約":"履约","甚麼":"什么","電郵":"邮箱","保養":"保修","亞太地區":"亚太地区","中國內地":"中国大陆"};
+    let out=s; Object.entries(phrase).forEach(([a,b])=>out=out.split(a).join(b));
+    const reverse={}; Object.entries(traditionalMap).forEach(([s,t])=>reverse[t]=s);
+    return [...out].map(c=>reverse[c]||c).join("");
+  };
+  const originals = new WeakMap();
+  const labels = {en:"EN", "zh-Hant":"繁中", "zh-Hans":"简中"};
+  const translate = (text, lang) => {
+    if(lang==="en") return text;
+    const traditional=ZH[text] || text;
+    return lang==="zh-Hans" ? toSimplified(traditional) : traditional;
+  };
+  function apply(lang){
+    if(!labels[lang]) lang="en";
+    document.documentElement.lang=lang==="en"?"en":lang;
+    document.documentElement.dir="ltr";
+    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+    const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node=>{
+      if(node.parentElement?.closest(".language-menu")) return;
+      if(!originals.has(node)) originals.set(node,node.nodeValue);
+      const original=originals.get(node), trimmed=original.trim();
+      if(!trimmed) return;
+      const lead=original.match(/^\s*/)[0], trail=original.match(/\s*$/)[0];
+      node.nodeValue=lead+translate(trimmed,lang)+trail;
+    });
+    document.querySelectorAll("[data-language-current]").forEach(el=>el.textContent=labels[lang]);
+    document.querySelectorAll(".language-menu button").forEach(el=>el.classList.toggle("active",el.dataset.language===lang));
+    localStorage.setItem("rwa-language",lang);
+    window.dispatchEvent(new CustomEvent("rwa:languagechange",{detail:{language:lang}}));
+  }
+  function mount(){
+    document.querySelectorAll(".global-header .language,.global-header .v10-lang").forEach(control=>{
+      control.setAttribute("role","button");control.setAttribute("tabindex","0");control.setAttribute("aria-label","Change language");
+      control.innerHTML='<span data-language-current>EN</span><span aria-hidden="true">⌄</span>';
+      const menu=document.createElement("div");menu.className="language-menu";menu.innerHTML='<button type="button" data-language="en">English</button><button type="button" data-language="zh-Hant">繁體中文</button><button type="button" data-language="zh-Hans">简体中文</button>';
+      control.appendChild(menu);
+      const toggle=e=>{e.stopPropagation();control.classList.toggle("open")};
+      control.addEventListener("click",toggle);control.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle(e)}});
+      menu.querySelectorAll("button").forEach(btn=>btn.addEventListener("click",e=>{e.stopPropagation();apply(btn.dataset.language);control.classList.remove("open")}));
+    });
+    document.addEventListener("click",()=>document.querySelectorAll(".global-header .language.open,.global-header .v10-lang.open").forEach(x=>x.classList.remove("open")));
+    apply(localStorage.getItem("rwa-language")||"en");
+  }
+  document.readyState==="loading"?document.addEventListener("DOMContentLoaded",mount):mount();
+})();
