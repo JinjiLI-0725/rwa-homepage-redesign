@@ -72,6 +72,13 @@ body{font-family:Inter,Arial,sans-serif}
 .global-header .header-end,.global-header>.language,.global-header>.v10-lang{justify-self:end!important}
 .global-header .language,.global-header .v10-lang{font:600 11px/1 Inter,Arial,sans-serif!important}
 .global-header .mobile-nav{display:none}
+.global-header .language,.global-header .v10-lang{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;min-width:42px!important;height:38px!important;padding:0 9px!important;border:1px solid #222!important;border-radius:22px!important;background:rgba(250,250,248,.96)!important;color:#111!important;cursor:pointer!important;text-align:center!important}
+.language-menu{position:absolute;right:0;top:calc(100% + 10px);z-index:2000;width:146px;padding:7px;background:#fff;border:1px solid #dededb;box-shadow:0 14px 35px rgba(0,0,0,.12);opacity:0;visibility:hidden;transform:translateY(-5px);transition:.18s ease}
+.global-header .language.open .language-menu,.global-header .v10-lang.open .language-menu{opacity:1;visibility:visible;transform:none}
+.language-menu button{display:block;width:100%;padding:10px 11px;border:0;background:transparent;color:#333;font:500 13px/1.2 Inter,Arial,sans-serif;text-align:left;cursor:pointer}
+.language-menu button:hover,.language-menu button.active{background:#f5f4f1;color:var(--site-red)}
+html[lang^="zh"] body{font-family:Inter,"PingFang TC","PingFang SC","Microsoft JhengHei","Microsoft YaHei",sans-serif!important}
+html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3{letter-spacing:-.035em!important}
 
 @media(max-width:900px){
   .global-header{height:70px!important;min-height:70px!important;padding:0 24px!important;grid-template-columns:1fr auto!important}
