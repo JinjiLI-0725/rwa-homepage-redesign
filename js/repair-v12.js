@@ -34,4 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.12 });
 
   revealTargets.forEach(el => observer.observe(el));
+
+  const consumerMenu = document.querySelector(".crwa .menu-toggle");
+  const consumerNav = document.querySelector(".crwa .site-nav");
+
+  if (consumerMenu && consumerNav) {
+    consumerMenu.addEventListener("click", () => {
+      const isOpen = consumerNav.classList.toggle("open");
+      consumerMenu.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
 });
