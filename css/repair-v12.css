@@ -834,3 +834,41 @@ body.crwa .hero h1{font-size:clamp(40px,3vw,54px)!important}
   body.crwa .rights-scene{width:118%;margin-left:-9%;height:auto}
   body.crwa .rights-scene img{max-height:none}
 }
+
+/* Consumer RWA — seamless media integration */
+body.crwa .hero{
+  grid-template-columns:36% 64%;
+  column-gap:0;
+  background:#fff;
+}
+body.crwa .rights-scene{
+  width:112%;
+  margin-left:-8%;
+  overflow:visible;
+  background:transparent;
+}
+body.crwa .rights-scene:before{
+  display:none;
+}
+body.crwa .rights-scene img{
+  width:100%;
+  max-height:590px;
+  filter:brightness(1.035) contrast(.975) saturate(.98);
+  mix-blend-mode:multiply;
+  -webkit-mask-image:
+    linear-gradient(to right,transparent 0,#000 8%,#000 94%,transparent 100%),
+    linear-gradient(to bottom,transparent 0,#000 7%,#000 91%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:
+    linear-gradient(to right,transparent 0,#000 8%,#000 94%,transparent 100%),
+    linear-gradient(to bottom,transparent 0,#000 7%,#000 91%,transparent 100%);
+  mask-composite:intersect;
+}
+@media(max-width:1050px){
+  body.crwa .hero{grid-template-columns:39% 61%}
+  body.crwa .rights-scene{width:116%;margin-left:-10%}
+}
+@media(max-width:760px){
+  body.crwa .hero{background:#fff}
+  body.crwa .rights-scene{width:128%;margin-left:-14%}
+}
