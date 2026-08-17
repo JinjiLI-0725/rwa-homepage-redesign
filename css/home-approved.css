@@ -15,12 +15,27 @@ footer{position:relative;display:grid;grid-template-columns:1.5fr repeat(4,1fr);
 @media(max-width:520px){.hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.about-copy h2,.model h2,.section-heading h2{font-size:34px}.solution-grid{grid-template-columns:1fr}.solution-grid article{min-height:220px}.section-heading{align-items:flex-start;flex-direction:column}.film-stage{height:470px}.film-copy{left:7%;right:7%}.film-copy h2{font-size:34px}.document-grid>a{padding:24px 18px}.cta h2{font-size:32px}footer{grid-template-columns:1fr}.footer-logo{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-media>img,.hero-ring{animation:none}.reveal{opacity:1;transform:none;transition:none}}
 
-/* Home platform token — circular crop consistent with the other pages */
-.about-visual img{
+/* Home platform token — hard circular viewport removes the source PNG's square canvas */
+.about-logo-disc{
+  position:relative;
+  z-index:3;
+  width:150px;
+  height:150px;
+  overflow:hidden;
   border-radius:50%;
-  clip-path:circle(49% at 50% 50%);
+  background:#fff;
+  box-shadow:0 20px 30px rgba(0,0,0,.12);
+  isolation:isolate;
+}
+.about-logo-disc img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  transform:scale(1.035);
   mix-blend-mode:multiply;
-  background:transparent;
+  filter:none;
 }
 
 /* Approved proportion and media-integration pass */
@@ -67,7 +82,8 @@ footer{position:relative;display:grid;grid-template-columns:1.5fr repeat(4,1fr);
   .about{min-height:500px;padding-top:62px;padding-bottom:62px}
   .about-copy h2,.model h2,.section-heading h2{font-size:clamp(32px,2.8vw,44px);line-height:1.12}
   .about-visual{min-height:330px;background:#fff;overflow:visible}
-  .about-visual img{width:132px;height:132px;mix-blend-mode:multiply}
+  .about-logo-disc{width:132px;height:132px}
+  .about-logo-disc img{width:100%;height:100%;mix-blend-mode:multiply}
   .about-grid-lines{inset:4%;opacity:.7}
   .model.section{padding-top:60px;padding-bottom:60px}
   .model .shell>h2{margin-bottom:34px}
@@ -111,7 +127,7 @@ footer{position:relative;display:grid;grid-template-columns:1.5fr repeat(4,1fr);
     mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
   }
   .about-visual{background:#fff}
-  .about-visual img{mix-blend-mode:multiply}
+  .about-logo-disc img{mix-blend-mode:multiply}
   .project-card{border:0;background:transparent;padding:0 0 17px}
   .project-card h3,.project-card p,.project-card>span{margin-left:14px;margin-right:14px}
   .health .token-stage,.rwa .token-stage{background:#f3f1ed}
