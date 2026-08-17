@@ -938,3 +938,13 @@ body.ecosystem-page{--eco-red:#d5202d;--eco-ink:#111;--eco-muted:#646464;--eco-l
 @media(max-width:1050px){.eco-hero{grid-template-columns:42% 58%}.eco-network{transform:scale(.88);transform-origin:center}.eco-section-head{grid-template-columns:1fr 300px}.eco-token-section{grid-template-columns:1fr 1fr}.eco-capabilities{grid-column:1/-1;border-left:0;padding:25px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.eco-capabilities article{border-bottom:0}.eco-project-grid{grid-template-rows:290px 290px 250px}}
 @media(max-width:760px){.ecosystem-page .v10-header{position:relative}.eco-hero{display:block!important;min-height:0;padding-block:55px}.eco-hero-copy{padding:0}.eco-hero h1{font-size:45px!important}.eco-network{height:470px;margin-top:35px;transform:scale(.78);transform-origin:center top;width:128%;margin-left:-14%}.eco-section-head{display:block;margin-bottom:35px}.eco-section-head>p{margin-top:20px}.eco-flow{grid-template-columns:1fr 1fr;gap:35px 18px}.eco-flow:before{display:none}.eco-token-section{display:block!important;padding-block:65px}.eco-token-stage{height:370px}.eco-capabilities{display:block;padding-top:10px}.eco-project-grid{display:block}.eco-project{min-height:300px;margin-bottom:16px}.eco-project-feature{min-height:560px}.eco-project-feature .eco-project-art{min-height:380px}.eco-project-wide{grid-template-columns:55% 45%}.eco-cta>.shell{display:block!important}.eco-cta>.shell>p{margin:26px 0}.eco-cta a{max-width:240px}.eco-footer{padding:25px 0;gap:20px;flex-wrap:wrap}.eco-footer span{order:3;width:100%}}
 @media(max-width:480px){.eco-hero h1{font-size:39px!important}.eco-network{transform:scale(.64);width:156%;margin-left:-28%;height:390px}.eco-flow{grid-template-columns:1fr}.eco-project,.eco-project-wide{display:flex;flex-direction:column}.eco-project-art{min-height:250px}.eco-project-copy h3{font-size:24px!important}.eco-cta h2{font-size:38px!important}}
+
+/* RWA platform token — circular crop for seamless page integration */
+body.crwa .utility-object img,
+.ecosystem-page .eco-platform img,
+.ecosystem-page .eco-token-stage img{
+  border-radius:50%!important;
+  clip-path:circle(49% at 50% 50%);
+  mix-blend-mode:multiply;
+  background:transparent!important;
+}
