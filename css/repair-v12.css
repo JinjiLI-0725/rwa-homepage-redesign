@@ -723,3 +723,74 @@ body.crwa{--red:#ed1c24;--ink:#090909;--muted:#626262;--line:#d9d9d9;--paper:#fa
 @media(max-width:1050px){body.crwa{--shell:calc(100vw - 48px)}.site-header{padding:0 24px}.site-nav{gap:22px}.hero{grid-template-columns:42% 58%}.rights-scene{transform:scale(.84);transform-origin:left center;width:119%}.utility-panel{padding-left:40px;grid-template-columns:1fr 180px}.resource-grid{grid-template-columns:repeat(3,1fr)}.resource-grid aside{grid-column:1/-1}}
 @media(max-width:760px){body.crwa{--shell:calc(100vw - 36px)}.site-header{height:66px;padding:0 18px;grid-template-columns:1fr auto auto;gap:15px}.brand img{width:25px;height:25px}.brand span{font-size:18px}.menu-toggle{display:block;border:0;background:none;font:600 12px Inter}.language{width:32px;height:32px}.site-nav{display:none;position:absolute;left:0;right:0;top:66px;height:auto;padding:20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0}.site-nav.open{display:flex}.site-nav a{width:100%;height:auto;padding:13px 0;display:block}.site-nav a.active:after{bottom:5px;right:auto;width:44px}.hero{display:block;padding:62px 0 45px;min-height:auto}.hero-copy{padding:0}.hero h1{font-size:43px}.intro{font-size:14px}.rights-scene{height:430px;margin-top:30px;transform:scale(.62);transform-origin:left top;width:160%}.lifecycle-grid{grid-template-columns:1fr 1fr;gap:36px 15px}.lifecycle-grid article:not(:last-child):after{display:none}.benefit-grid{display:block}.benefit-panel{border-right:0;border-bottom:1px solid var(--line)}.utility-panel{padding-left:8px;grid-template-columns:1fr}.utility-object{display:none}.resource-grid{grid-template-columns:1fr}.resource-grid aside{grid-column:auto}.site-footer{height:auto;padding:25px 0;gap:18px;align-items:flex-start;flex-direction:column}}
 @media(max-width:480px){.lifecycle-grid{grid-template-columns:1fr}.rights-scene{transform:scale(.5);width:200%;height:360px}.hero h1{font-size:38px}.lifecycle-section h2,.benefit-section h2,.resources-section h2{font-size:26px}}
+
+/* Consumer RWA — proportion and cascade correction */
+body.crwa .hero{
+  min-height:680px;
+  grid-template-columns:40% 60%;
+  padding-block:58px 66px;
+}
+body.crwa .hero-copy{padding-right:64px}
+body.crwa .hero h1{
+  font-size:clamp(43px,3.35vw,58px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.052em!important;
+  max-width:560px;
+}
+body.crwa .hero .intro{
+  max-width:470px;
+  margin:28px 0 32px;
+  font-size:15px!important;
+  line-height:1.7!important;
+}
+body.crwa .rights-scene{
+  width:116%;
+  height:530px;
+  transform:scale(.86) translateX(-2%);
+  transform-origin:left center;
+}
+body.crwa .rights-scene>.object>span{display:none}
+body.crwa .rights-scene small,
+body.crwa .rights-scene b,
+body.crwa .rights-scene code{color:#111!important}
+body.crwa .scene-base{bottom:32px;height:92px}
+body.crwa .scene-base div{padding:24px 15px}
+body.crwa .object{bottom:112px}
+body.crwa .utility-object{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:radial-gradient(circle at 40% 32%,#fff 0,#ececea 52%,#b9b9b6 100%);
+  box-shadow:0 24px 45px rgba(0,0,0,.15);
+  transform:none;
+}
+body.crwa .utility-object img{
+  width:124px;
+  height:124px;
+  object-fit:contain;
+  mix-blend-mode:multiply;
+}
+body.crwa .site-footer{
+  width:var(--shell)!important;
+  max-width:none!important;
+  min-height:70px!important;
+  height:70px!important;
+  margin:0 auto!important;
+  padding:0!important;
+  background:var(--paper)!important;
+  color:#666!important;
+  border-top:1px solid var(--line)!important;
+}
+body.crwa .site-footer a{color:#666!important}
+
+@media(max-width:1050px){
+  body.crwa .hero{grid-template-columns:42% 58%}
+  body.crwa .hero-copy{padding-right:34px}
+  body.crwa .rights-scene{transform:scale(.74);width:135%}
+}
+@media(max-width:760px){
+  body.crwa .hero{display:block;padding:52px 0 38px}
+  body.crwa .hero h1{font-size:42px!important}
+  body.crwa .rights-scene{height:390px;margin-top:24px;transform:scale(.58);width:170%;transform-origin:left top}
+  body.crwa .site-footer{height:auto!important;min-height:90px!important;padding:24px 0!important}
+}
