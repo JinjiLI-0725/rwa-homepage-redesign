@@ -15,6 +15,14 @@ footer{position:relative;display:grid;grid-template-columns:1.5fr repeat(4,1fr);
 @media(max-width:520px){.hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.about-copy h2,.model h2,.section-heading h2{font-size:34px}.solution-grid{grid-template-columns:1fr}.solution-grid article{min-height:220px}.section-heading{align-items:flex-start;flex-direction:column}.film-stage{height:470px}.film-copy{left:7%;right:7%}.film-copy h2{font-size:34px}.document-grid>a{padding:24px 18px}.cta h2{font-size:32px}footer{grid-template-columns:1fr}.footer-logo{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-media>img,.hero-ring{animation:none}.reveal{opacity:1;transform:none;transition:none}}
 
+/* Home platform token — circular crop consistent with the other pages */
+.about-visual img{
+  border-radius:50%;
+  clip-path:circle(49% at 50% 50%);
+  mix-blend-mode:multiply;
+  background:transparent;
+}
+
 /* Approved proportion and media-integration pass */
 @media(min-width:821px){
   .header{height:68px}
