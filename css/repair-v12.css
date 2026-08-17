@@ -872,3 +872,52 @@ body.crwa .rights-scene img{
   body.crwa .hero{background:#fff}
   body.crwa .rights-scene{width:128%;margin-left:-14%}
 }
+
+/* Consumer RWA — readable type and live energy */
+body.crwa .site-nav{font-size:14px}
+body.crwa .hero .intro{font-size:17px!important;line-height:1.72!important}
+body.crwa .rights-scene:after{
+  content:"";
+  position:absolute;
+  inset:4% 0 5%;
+  z-index:3;
+  pointer-events:none;
+  background:linear-gradient(105deg,transparent 36%,rgba(255,255,255,.04) 43%,rgba(255,40,48,.24) 49%,rgba(255,255,255,.10) 53%,transparent 61%);
+  background-size:240% 100%;
+  mix-blend-mode:screen;
+  animation:crwaEnergySweep 4.8s cubic-bezier(.4,0,.2,1) infinite;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 20%,#000 35%,#000 75%,transparent 88%);
+  mask-image:linear-gradient(to bottom,transparent 20%,#000 35%,#000 75%,transparent 88%);
+}
+body.crwa .rights-scene img{animation:crwaMediaPulse 5.5s ease-in-out infinite}
+body.crwa .lifecycle-section h2,
+body.crwa .benefit-section h2,
+body.crwa .resources-section h2{font-size:34px!important}
+body.crwa .lifecycle-grid h3{font-size:15px!important}
+body.crwa .lifecycle-grid p{font-size:16px!important;line-height:1.65;max-width:290px}
+body.crwa .benefit-panel li{font-size:15px!important;line-height:1.55}
+body.crwa .utility-panel>div>p:not(.eyebrow){font-size:16px!important;line-height:1.65}
+body.crwa .resource-grid b{font-size:15px!important}
+body.crwa .resource-grid p{font-size:14px!important;line-height:1.6}
+body.crwa .resource-grid aside .text-link{font-size:14px!important}
+body.crwa .resources-section{padding:58px 0 62px}
+body.crwa .site-footer{font-size:12px!important}
+@keyframes crwaEnergySweep{
+  0%,12%{background-position:120% 0;opacity:0}
+  22%{opacity:1}
+  70%{opacity:.9}
+  88%,100%{background-position:-120% 0;opacity:0}
+}
+@keyframes crwaMediaPulse{
+  0%,100%{filter:brightness(1.035) contrast(.975) saturate(.98) drop-shadow(0 0 0 rgba(237,28,36,0))}
+  50%{filter:brightness(1.045) contrast(.985) saturate(1.04) drop-shadow(0 0 8px rgba(237,28,36,.12))}
+}
+@media(prefers-reduced-motion:reduce){
+  body.crwa .rights-scene:after,
+  body.crwa .rights-scene img{animation:none}
+}
+@media(max-width:760px){
+  body.crwa .hero .intro{font-size:16px!important}
+  body.crwa .lifecycle-grid p,
+  body.crwa .utility-panel>div>p:not(.eyebrow){font-size:15px!important}
+}
