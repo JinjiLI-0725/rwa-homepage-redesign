@@ -17,7 +17,7 @@ body{font-family:Inter,Arial,sans-serif}
   font-family:Inter,Arial,sans-serif!important;
   backdrop-filter:blur(14px);
 }
-.global-header .logo,.global-header .brand,.global-header .v10-logo{
+.global-header .logo,.global-header .brand,.global-header .v10-logo,.global-header .exact-brand{
   justify-self:start!important;
   display:flex!important;
   align-items:center!important;
@@ -30,20 +30,20 @@ body{font-family:Inter,Arial,sans-serif}
   letter-spacing:-.045em!important;
   text-decoration:none!important;
 }
-.global-header .logo img,.global-header .brand img,.global-header .v10-logo img{
+.global-header .logo img,.global-header .brand img,.global-header .v10-logo img,.global-header .exact-brand img{
   display:block!important;
   width:34px!important;
   height:34px!important;
   object-fit:contain!important;
   mix-blend-mode:multiply;
 }
-.global-header .logo strong,.global-header .v10-logo strong,.global-header .brand span{
+.global-header .logo strong,.global-header .v10-logo strong,.global-header .brand span,.global-header .exact-brand span{
   display:block!important;
   margin:0!important;
   font:inherit!important;
   color:inherit!important;
 }
-.global-header .desktop-nav,.global-header .site-nav,.global-header .v10-nav{
+.global-header .desktop-nav,.global-header .site-nav,.global-header .v10-nav,.global-header .exact-nav{
   justify-self:center!important;
   display:flex!important;
   align-items:center!important;
@@ -52,7 +52,7 @@ body{font-family:Inter,Arial,sans-serif}
   height:100%!important;
   margin:0!important;
 }
-.global-header .desktop-nav a,.global-header .site-nav a,.global-header .v10-nav a{
+.global-header .desktop-nav a,.global-header .site-nav a,.global-header .v10-nav a,.global-header .exact-nav a{
   box-sizing:border-box!important;
   position:relative!important;
   display:grid!important;
@@ -65,8 +65,8 @@ body{font-family:Inter,Arial,sans-serif}
   text-decoration:none!important;
   white-space:nowrap!important;
 }
-.global-header .desktop-nav a.active,.global-header .site-nav a.active,.global-header .v10-nav a.active{color:var(--site-red)!important}
-.global-header .desktop-nav a.active:after,.global-header .site-nav a.active:after,.global-header .v10-nav a.active:after{
+.global-header .desktop-nav a.active,.global-header .site-nav a.active,.global-header .v10-nav a.active,.global-header .exact-nav a.active{color:var(--site-red)!important}
+.global-header .desktop-nav a.active:after,.global-header .site-nav a.active:after,.global-header .v10-nav a.active:after,.global-header .exact-nav a.active:after{
   content:""!important;position:absolute!important;left:0!important;right:0!important;bottom:16px!important;height:2px!important;background:var(--site-red)!important
 }
 .global-header .header-end,.global-header>.language,.global-header>.v10-lang{justify-self:end!important}
@@ -86,6 +86,10 @@ html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3{letter-spacing:-.035
   .global-header .site-nav.open,.global-header .mobile-nav.open{display:flex!important}
   .global-header .v10-nav{gap:18px!important}
   .global-header .v10-nav a{font-size:12px!important}
-  .global-header .logo,.global-header .brand,.global-header .v10-logo{font-size:19px!important}
-  .global-header .logo img,.global-header .brand img,.global-header .v10-logo img{width:30px!important;height:30px!important}
+  .global-header .logo,.global-header .brand,.global-header .v10-logo,.global-header .exact-brand{font-size:19px!important}
+  .global-header .logo img,.global-header .brand img,.global-header .v10-logo img,.global-header .exact-brand img{width:30px!important;height:30px!important}
+}
+@media(max-width:700px){
+  .global-header .exact-nav{display:none!important}
+  .global-header.open .exact-nav{display:flex!important}
 }
