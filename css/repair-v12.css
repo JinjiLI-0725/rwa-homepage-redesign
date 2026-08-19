@@ -939,6 +939,18 @@ body.ecosystem-page{--eco-red:#d5202d;--eco-ink:#111;--eco-muted:#646464;--eco-l
 @media(max-width:760px){.ecosystem-page .v10-header{position:relative}.eco-hero{display:block!important;min-height:0;padding-block:55px}.eco-hero-copy{padding:0}.eco-hero h1{font-size:45px!important}.eco-network{height:470px;margin-top:35px;transform:scale(.78);transform-origin:center top;width:128%;margin-left:-14%}.eco-section-head{display:block;margin-bottom:35px}.eco-section-head>p{margin-top:20px}.eco-flow{grid-template-columns:1fr 1fr;gap:35px 18px}.eco-flow:before{display:none}.eco-token-section{display:block!important;padding-block:65px}.eco-token-stage{height:370px}.eco-capabilities{display:block;padding-top:10px}.eco-project-grid{display:block}.eco-project{min-height:300px;margin-bottom:16px}.eco-project-feature{min-height:560px}.eco-project-feature .eco-project-art{min-height:380px}.eco-project-wide{grid-template-columns:55% 45%}.eco-cta>.shell{display:block!important}.eco-cta>.shell>p{margin:26px 0}.eco-cta a{max-width:240px}.eco-footer{padding:25px 0;gap:20px;flex-wrap:wrap}.eco-footer span{order:3;width:100%}}
 @media(max-width:480px){.eco-hero h1{font-size:39px!important}.eco-network{transform:scale(.64);width:156%;margin-left:-28%;height:390px}.eco-flow{grid-template-columns:1fr}.eco-project,.eco-project-wide{display:flex;flex-direction:column}.eco-project-art{min-height:250px}.eco-project-copy h3{font-size:24px!important}.eco-cta h2{font-size:38px!important}}
 
+/* 2026-08-19: commerce visual moved from Home to the Ecosystem hero */
+.eco-commerce-visual{height:565px;position:relative;isolation:isolate;overflow:visible}
+.eco-commerce-visual:after{content:"";position:absolute;inset:5% 0 0;z-index:-2;background:radial-gradient(circle at 52% 50%,rgba(213,32,45,.09),transparent 55%);filter:blur(10px)}
+.eco-commerce-visual>img{position:absolute;z-index:2;left:50%;top:50%;display:block;width:112%;max-width:none;transform:translate(-50%,-50%);filter:drop-shadow(0 28px 35px rgba(60,30,30,.12));animation:ecoCommerceFloat 7s ease-in-out infinite}
+.eco-commerce-glow{position:absolute;left:42%;top:39%;width:30%;aspect-ratio:1;border-radius:50%;background:rgba(213,32,45,.13);filter:blur(35px)}
+.eco-commerce-ring{position:absolute;z-index:1;left:52%;top:56%;border:1px solid rgba(213,32,45,.22);border-radius:50%;transform:translate(-50%,-50%);animation:ecoCommerceRing 19s linear infinite}.eco-commerce-ring.ring-a{width:67%;aspect-ratio:1}.eco-commerce-ring.ring-b{width:48%;aspect-ratio:1;animation-direction:reverse}
+.eco-commerce-label{position:absolute;z-index:5;padding:11px 15px;background:rgba(255,255,255,.94);border-left:3px solid var(--eco-red);box-shadow:0 7px 18px rgba(0,0,0,.08);font-size:14px;font-weight:800;letter-spacing:.06em}.eco-commerce-label.label-products{left:6%;top:17%}.eco-commerce-label.label-commerce{right:-2%;top:29%}.eco-commerce-label.label-fulfilment{left:27%;bottom:9%}
+@keyframes ecoCommerceFloat{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,calc(-50% - 8px))}}@keyframes ecoCommerceRing{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media(max-width:760px){.eco-commerce-visual{height:470px;margin-top:35px;transform:scale(.78);transform-origin:center top;width:128%;margin-left:-14%}.eco-commerce-label{font-size:12px}}
+@media(max-width:480px){.eco-commerce-visual{transform:scale(.64);width:156%;margin-left:-28%;height:390px}}
+@media(prefers-reduced-motion:reduce){.eco-commerce-visual>img,.eco-commerce-ring{animation:none}}
+
 /* RWA platform token — circular crop for seamless page integration */
 body.crwa .utility-object img,
 .ecosystem-page .eco-platform img,
