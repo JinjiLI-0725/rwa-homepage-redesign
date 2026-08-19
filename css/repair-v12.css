@@ -980,3 +980,29 @@ body.contact-v2{--contact-red:#d5202d;--contact-ink:#111;--contact-muted:#666;--
 /* Documents & Trust moved from Home: three equal destination cards */
 .resource-grid.resource-grid-documents{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:760px){.resource-grid.resource-grid-documents{grid-template-columns:1fr}}
+
+/* Consumer Token Workflow — based on the approved RWA.LTD process document */
+.consumer-workflow{padding:78px 0 84px;background:linear-gradient(135deg,#f7f6f3 0,#fff 54%,#f5f2ef 100%)}
+.workflow-heading{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:90px;align-items:end;margin-bottom:38px}
+.workflow-heading h2{margin:8px 0 0;font-size:clamp(34px,3.25vw,52px);line-height:1.06;letter-spacing:-.045em}
+.workflow-heading>p{max-width:470px;margin:0 0 5px;color:#686868;font-size:17px;line-height:1.65}
+.workflow-chapters{display:grid;gap:14px}
+.workflow-chapter{position:relative;padding:28px 30px 30px;border:1px solid #dedbd7;background:rgba(255,255,255,.88);overflow:hidden}
+.workflow-chapter:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:var(--rwa-red)}
+.workflow-chapter header{display:flex;gap:18px;align-items:flex-start;margin-bottom:26px}
+.workflow-chapter header>span{display:grid;place-items:center;width:50px;height:50px;flex:0 0 50px;border:1px solid var(--rwa-red);border-radius:50%;color:var(--rwa-red);font-size:15px;font-weight:800}
+.workflow-chapter header p{margin:2px 0 7px;color:var(--rwa-red);font-size:11px;font-weight:800;letter-spacing:.16em}
+.workflow-chapter header h3{margin:0;font-size:22px;line-height:1.25;letter-spacing:-.025em}
+.workflow-steps{display:grid;gap:0;margin-left:68px}
+.workflow-seven{grid-template-columns:repeat(7,minmax(0,1fr))}.workflow-five{grid-template-columns:repeat(5,minmax(0,1fr))}
+.workflow-steps>div{position:relative;min-height:122px;padding:17px 19px 12px;border-top:1px solid #dfdcd8;border-right:1px solid #e7e4e0}
+.workflow-steps>div:first-child{border-left:1px solid #e7e4e0}
+.workflow-steps>div:not(:last-child):after{content:"→";position:absolute;z-index:2;right:-10px;top:44px;display:grid;place-items:center;width:20px;height:20px;background:#fff;color:var(--rwa-red);font-size:16px}
+.workflow-steps i{display:grid;place-items:center;width:30px;height:30px;margin-bottom:14px;border-radius:50%;background:#171719;color:#fff;font-size:10px;font-style:normal;font-weight:800}
+.workflow-steps b{display:block;font-size:13px;line-height:1.42}
+.workflow-market{background:linear-gradient(90deg,rgba(213,32,45,.035),rgba(255,255,255,.92))}
+.workflow-redemption{background:linear-gradient(90deg,#fff,rgba(213,32,45,.028))}
+.workflow-note{margin:20px 0 0 68px;padding:13px 17px;border-left:3px solid var(--rwa-red);background:#f3f1ee;color:#555;font-size:13px;line-height:1.55}
+@media(max-width:1100px){.workflow-seven{grid-template-columns:repeat(4,1fr)}.workflow-seven>div:nth-child(5){border-left:1px solid #e7e4e0}.workflow-steps>div{min-height:112px}.workflow-heading{gap:48px}}
+@media(max-width:760px){.consumer-workflow{padding:58px 0}.workflow-heading{display:block}.workflow-heading>p{margin-top:20px}.workflow-chapter{padding:24px 18px}.workflow-steps{margin-left:0;grid-template-columns:1fr}.workflow-steps>div,.workflow-steps>div:first-child,.workflow-seven>div:nth-child(5){min-height:0;padding:15px 14px 15px 54px;border:0;border-top:1px solid #e3e0dc}.workflow-steps>div:not(:last-child):after{content:"↓";right:auto;left:18px;top:auto;bottom:-10px}.workflow-steps i{position:absolute;left:12px;top:13px}.workflow-note{margin-left:0}}
+
