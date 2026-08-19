@@ -66,6 +66,7 @@ body{font-family:Inter,Arial,sans-serif}
   white-space:nowrap!important;
 }
 .global-header .desktop-nav a.active,.global-header .site-nav a.active,.global-header .v10-nav a.active,.global-header .exact-nav a.active{color:var(--site-red)!important}
+.global-header .exact-nav a{border-bottom-color:transparent!important}
 .global-header .desktop-nav a.active:after,.global-header .site-nav a.active:after,.global-header .v10-nav a.active:after,.global-header .exact-nav a.active:after{
   content:""!important;position:absolute!important;left:0!important;right:0!important;bottom:16px!important;height:2px!important;background:var(--site-red)!important
 }
