@@ -3,85 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Contact RWA.LTD about project opportunities, platform integration and ecosystem participation.">
-  <title>Contact — RWA.LTD</title>
+  <meta name="description" content="Explore RWA.LTD opportunities with the AI Concierge and connect with the right team.">
+  <title>AI Concierge & Contact — RWA.LTD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="css/v2.css" rel="stylesheet"><link href="css/v10.css" rel="stylesheet"><link href="css/repair-v12.css" rel="stylesheet"><link href="css/site-global.css?v=20260819-header2" rel="stylesheet"><link href="css/contact-concierge.css" rel="stylesheet">
 </head>
-<body class="v10 contact-page contact-v2">
+<body class="v10 contact-page concierge-page">
   <header class="v10-header global-header">
     <a aria-label="RWA.LTD Home" class="v10-logo v12-official-logo" href="index.html"><img alt="" src="assets/images/rwa-logo.png"><strong>RWA.LTD</strong></a>
     <nav aria-label="Primary navigation" class="v10-nav"><a href="index.html">Home</a><a href="consumer-rwa.html">Consumer RWA</a><a href="ecosystem.html">Ecosystem</a><a href="https://www.rwa.ltd/#/news">News</a><a class="active" href="contact.html">Contact</a></nav>
     <div class="v10-lang">EN⌄</div>
   </header>
-
-  <main>
-    <section class="contact-intro">
-      <div class="shell contact-intro-grid">
-        <div class="contact-intro-copy">
-          <p class="contact-kicker">CONTACT RWA.LTD</p>
-          <h1>Let’s build real-world<br><em>value together.</em></h1>
-          <p>Connect your project with RWA.LTD infrastructure, platforms and ecosystem.</p>
+  <main class="concierge-main">
+    <section class="concierge-hero concierge-shell" aria-labelledby="concierge-title">
+      <div class="concierge-hero-copy">
+        <div class="concierge-badge"><span></span>RWA.LTD AI CONCIERGE</div>
+        <h1 id="concierge-title">Turn your RWA idea into a clear next step.</h1>
+        <p class="concierge-lead">An intelligent guide for brands, project owners, partners and investors to explore the RWA.LTD ecosystem, understand real use cases and find the right cooperation path.</p>
+        <div class="concierge-points"><div><span>✓</span>Understand RWA.LTD and Consumer RWA</div><div><span>✓</span>Explore token, commerce and ecosystem scenarios</div><div><span>✓</span>Connect with the right project or partnership team</div></div>
+        <div class="concierge-actions"><a class="concierge-btn concierge-btn-primary" href="#ai-conversation">Ask the AI Concierge <span>↗</span></a><a class="concierge-btn concierge-btn-secondary" href="#direct-contact">Contact the team</a></div>
+      </div>
+      <aside class="concierge-panel scenario-builder" aria-label="AI scenario builder">
+        <div class="concierge-panel-top"><div class="concierge-panel-title"><span class="concierge-ai-icon">AI</span><span>AI Scenario Builder</span></div><span class="concierge-status">Interactive</span></div>
+        <div class="builder-body">
+          <label>Visitor type<select id="visitorType"><option>General visitor</option><option>Merchant / brand owner</option><option>Project owner</option><option>Business partner</option><option>Investor / ecosystem participant</option></select></label>
+          <label>Business interest<select id="businessInterest"><option>Understand RWA.LTD</option><option>Explore Consumer RWA</option><option>Launch a tokenized product</option><option>Explore ecosystem cooperation</option><option>Discuss platform integration</option></select></label>
+          <label>Example to explore<select id="tokenExample"><option>RWA Platform Token</option><option>DIMD Token</option><option>TOP100 Token</option><option>GCT Token</option></select></label>
+          <div class="builder-status-box"><div><span>Website context</span><strong>Ready</strong></div><div><span>AI question</span><strong id="questionStatus">Ready</strong></div><div><span>Conversation</span><strong>Preview</strong></div></div>
+          <div id="builderOutput" class="builder-output" aria-live="polite"></div>
+          <button id="builderAskButton" class="builder-action" type="button">Send to AI Concierge <span>→</span></button>
         </div>
-        <div class="contact-pathways" aria-label="Contact pathways">
-          <article><span>01</span><h2>Project enquiry</h2><p>Explore opportunities for real-world projects.</p></article>
-          <article><span>02</span><h2>Platform integration</h2><p>Connect with RWA.LTD infrastructure and platforms.</p></article>
-          <article><span>03</span><h2>General contact</h2><p>Reach out to our team for general enquiries.</p></article>
-        </div>
+      </aside>
+    </section>
+    <section id="ai-conversation" class="conversation-section concierge-shell">
+      <div class="section-heading"><div><p class="section-kicker">VISIBLE AI INTERACTION</p><h2>Start with a question.<br>Leave with a direction.</h2></div><p>Ask in your own words or choose a suggested path. The final backend connection will be added after the interface is approved.</p></div>
+      <div class="conversation-grid">
+        <article class="ai-conversation-card" aria-label="RWA.LTD AI Concierge conversation">
+          <header><div class="concierge-panel-title"><span class="concierge-ai-icon">AI</span><div><strong>RWA.LTD AI Concierge</strong><small>RWA ecosystem guide</small></div></div><span class="concierge-status">Ready</span></header>
+          <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"><div class="chat-message assistant">Welcome to RWA.LTD. Tell me what you are exploring, and I’ll help you understand the relevant scenario and next step.</div><div class="chat-message user">How could my consumer brand use RWA.LTD?</div><div class="chat-message assistant">We can begin with your product, target market and customer benefit, then map a practical Consumer RWA path—from issuance and circulation to redemption and ecosystem cooperation.</div></div>
+          <div class="chat-suggestions"><button type="button" data-question="What does RWA.LTD do?">What does RWA.LTD do?</button><button type="button" data-question="How can I launch a Consumer RWA project?">Launch a Consumer RWA project</button><button type="button" data-question="How can we cooperate with the RWA.LTD ecosystem?">Explore cooperation</button></div>
+          <form id="conciergeForm" class="chat-form"><label class="sr-only" for="conciergeInput">Ask the AI Concierge</label><input id="conciergeInput" maxlength="1000" placeholder="Ask about RWA.LTD, projects or cooperation…" autocomplete="off"><button type="submit">Send <span>↑</span></button></form>
+        </article>
+        <aside class="conversation-guide"><p class="section-kicker">HOW IT GUIDES YOU</p><ol><li><span>01</span><div><strong>Understand your objective</strong><p>Identify whether you are exploring a product, project, integration or partnership.</p></div></li><li><span>02</span><div><strong>Connect the right RWA context</strong><p>Explain relevant platform capabilities, examples and ecosystem pathways.</p></div></li><li><span>03</span><div><strong>Prepare the next conversation</strong><p>Turn your enquiry into a clearer brief for the RWA.LTD team.</p></div></li></ol></aside>
       </div>
     </section>
-
-    <section class="contact-enquiry shell">
-      <div class="contact-visual">
-        <div class="contact-grid-lines"></div>
-        <div class="contact-signal signal-a"></div><div class="contact-signal signal-b"></div><div class="contact-signal signal-c"></div>
-        <div class="contact-token-wrap"><div class="contact-token-ring"></div><img src="assets/tokens/token-rwa.png" alt="RWA platform token"><div class="contact-token-base"></div></div>
-        <div class="contact-conversation"><h2>Start a conversation</h2><p>Tell us about your project.<br>We’ll connect you with the right team.</p></div>
+    <section class="examples-section concierge-shell">
+      <div class="section-heading compact"><div><p class="section-kicker">LIVE WEBSITE CONTEXT</p><h2>Explore real token examples</h2></div><p>Use visible RWA.LTD ecosystem examples as starting points for an AI-guided conversation.</p></div>
+      <div class="token-example-grid">
+        <article class="token-example-card"><div class="token-head"><img src="assets/tokens/token-rwa.png" alt="RWA Platform Token"><div><strong>RWA Platform Token</strong><span>Platform ecosystem</span></div></div><p>Explore how the platform token connects services, participation and the broader RWA.LTD ecosystem.</p><button type="button" data-question="Explain the RWA Platform Token and its role in the RWA.LTD ecosystem.">Ask AI about RWA <span>→</span></button></article>
+        <article class="token-example-card"><div class="token-head"><img src="assets/tokens/token-dimd.png" alt="DIMD Token"><div><strong>DIMD Token</strong><span>Consumer RWA example</span></div></div><p>Understand how a real product token can be presented through issuance, circulation and customer value.</p><button type="button" data-question="Explain DIMD Token as a Consumer RWA example and outline the cooperation path.">Ask AI about DIMD <span>→</span></button></article>
+        <article class="token-example-card"><div class="token-head"><img src="assets/tokens/token-top100.png" alt="TOP100 Token"><div><strong>TOP100 Token</strong><span>Ecosystem example</span></div></div><p>Explore a service-oriented token example and how ecosystem participation can create utility.</p><button type="button" data-question="Explain TOP100 Token and how its service-oriented RWA scenario works.">Ask AI about TOP100 <span>→</span></button></article>
       </div>
-
-      <form class="contact-form-v2" aria-label="Contact enquiry form">
-        <div class="contact-form-row">
-          <label for="contact-name">Name</label>
-          <input id="contact-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="contact-form-row">
-          <label for="contact-company">Company / Project</label>
-          <input id="contact-company" name="company" type="text" autocomplete="organization">
-        </div>
-        <div class="contact-form-row">
-          <label for="contact-email">Email</label>
-          <input id="contact-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="contact-form-row">
-          <label for="contact-region">Region</label>
-          <select id="contact-region" name="region">
-            <option value="">Select region</option><option>Hong Kong</option><option>Mainland China</option><option>Asia Pacific</option><option>Europe</option><option>North America</option><option>Other</option>
-          </select>
-        </div>
-        <div class="contact-form-row contact-message">
-          <label for="contact-message">What are you looking to build?</label>
-          <textarea id="contact-message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="button">Send enquiry <span>→</span></button>
-        <p class="contact-form-note">By submitting an enquiry, you agree that RWA.LTD may contact you regarding your request.</p>
-      </form>
     </section>
-
-    <section class="contact-process">
-      <div class="shell">
-        <article><span>01</span><div><h2>Tell us about the project</h2><p>Share your goals and key requirements.</p></div></article>
-        <article><span>02</span><div><h2>We review the opportunity</h2><p>Our team considers how RWA.LTD can support the initiative.</p></div></article>
-        <article><span>03</span><div><h2>Continue the conversation</h2><p>We connect to explore the next steps together.</p></div></article>
-      </div>
+    <section id="direct-contact" class="direct-contact concierge-shell">
+      <div><p class="section-kicker">DIRECT CONTACT</p><h2>Ready for a human conversation?</h2><p>Share your project direction and the RWA.LTD team will connect you with the relevant people.</p></div>
+      <div class="contact-route-grid"><a href="mailto:contact@rwa.ltd"><span>01</span><div><strong>Project enquiry</strong><p>Discuss a product, asset or Consumer RWA initiative.</p></div><b>↗</b></a><a href="mailto:contact@rwa.ltd"><span>02</span><div><strong>Platform & ecosystem</strong><p>Explore integration, distribution or strategic cooperation.</p></div><b>↗</b></a><a href="mailto:contact@rwa.ltd"><span>03</span><div><strong>General contact</strong><p>Reach the RWA.LTD team for other enquiries.</p></div><b>↗</b></a></div>
     </section>
   </main>
-
-  <footer class="contact-footer-v2 shell">
-    <a aria-label="RWA.LTD Home" href="index.html"><img src="assets/images/rwa-logo.png" alt=""><strong>RWA.LTD</strong></a>
-    <span>© RWA.LTD. All rights reserved.</span>
-    <div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
-  </footer>
+  <footer class="contact-footer-v2 concierge-shell"><a aria-label="RWA.LTD Home" href="index.html"><img src="assets/images/rwa-logo.png" alt=""><strong>RWA.LTD</strong></a><span>© RWA.LTD. All rights reserved.</span><div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div></footer>
   <script src="js/v2.js"></script><script src="js/repair-v12.js"></script><script src="js/i18n.js"></script><script src="js/contact-concierge.js"></script>
 </body>
 </html>
