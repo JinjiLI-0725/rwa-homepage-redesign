@@ -7,7 +7,7 @@
   <title>Contact — RWA.LTD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="css/v2.css" rel="stylesheet"><link href="css/v10.css" rel="stylesheet"><link href="css/repair-v12.css" rel="stylesheet"><link href="css/site-global.css?v=20260819-header2" rel="stylesheet">
+  <link href="css/v2.css" rel="stylesheet"><link href="css/v10.css" rel="stylesheet"><link href="css/repair-v12.css" rel="stylesheet"><link href="css/site-global.css?v=20260819-header2" rel="stylesheet"><link href="css/contact-concierge.css" rel="stylesheet">
 </head>
 <body class="v10 contact-page contact-v2">
   <header class="v10-header global-header">
@@ -32,15 +32,31 @@
       </div>
     </section>
 
-    <section class="contact-enquiry shell">
-      <div class="contact-visual">
-        <div class="contact-grid-lines"></div>
-        <div class="contact-signal signal-a"></div><div class="contact-signal signal-b"></div><div class="contact-signal signal-c"></div>
-        <div class="contact-token-wrap"><div class="contact-token-ring"></div><img src="assets/tokens/token-rwa.png" alt="RWA platform token"><div class="contact-token-base"></div></div>
-        <div class="contact-conversation"><h2>Start a conversation</h2><p>Tell us about your project.<br>We’ll connect you with the right team.</p></div>
+    <section class="contact-enquiry contact-enquiry-ai shell">
+      <div class="rwa-concierge" data-ai-endpoint="/api/ai-chat">
+        <header class="rwa-concierge__header">
+          <div class="rwa-concierge__identity">
+            <span class="rwa-concierge__mark" aria-hidden="true">R</span>
+            <div><span>RWA.LTD DIGITAL DESK</span><h2>AI Concierge</h2></div>
+          </div>
+          <span class="rwa-concierge__status"><i></i> Online</span>
+        </header>
+        <div class="rwa-concierge__body">
+          <p class="rwa-concierge__eyebrow">START WITH YOUR OBJECTIVE</p>
+          <h2>How can we help move<br>your project forward?</h2>
+          <p class="rwa-concierge__intro">Ask about project onboarding, platform integration, Consumer RWA, or the right next step for your organisation.</p>
+          <div class="rwa-concierge__suggestions" aria-label="Suggested questions"></div>
+          <div class="rwa-concierge__messages" role="log" aria-live="polite"></div>
+        </div>
+        <form class="rwa-concierge__form">
+          <label class="sr-only" for="concierge-message">Your question</label>
+          <textarea id="concierge-message" maxlength="1000" rows="2" placeholder="Describe your project or ask a question…"></textarea>
+          <button type="submit" aria-label="Send message">Send <span>→</span></button>
+        </form>
       </div>
 
-      <form class="contact-form-v2" aria-label="Contact enquiry form">
+      <form class="contact-form-v2 contact-form-fallback" aria-label="Contact enquiry form">
+        <div class="contact-form-heading"><span>HUMAN FOLLOW-UP</span><h2>Prefer to write to our team?</h2><p>Leave your details and a team member can continue the conversation.</p></div>
         <div class="contact-form-row">
           <label for="contact-name">Name</label>
           <input id="contact-name" name="name" type="text" autocomplete="name" required>
@@ -82,6 +98,6 @@
     <span>© RWA.LTD. All rights reserved.</span>
     <div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
   </footer>
-  <script src="js/v2.js"></script><script src="js/repair-v12.js"></script><script src="js/i18n.js"></script>
+  <script src="js/v2.js"></script><script src="js/repair-v12.js"></script><script src="js/i18n.js"></script><script src="js/contact-concierge.js"></script>
 </body>
 </html>
