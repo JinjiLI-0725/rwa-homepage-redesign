@@ -73,3 +73,38 @@
 .chat-suggestions button,.token-example-card button{border-color:#d9cec3;background:#fffaf4;color:#6f2732}
 .chat-form{background:#fffdfa}.chat-form input{border-color:#d9cec3;background:#fffaf5}
 .token-head img{border-color:#ddd2c8;background:#f5eee6}
+
+/* Exact homepage visual system: #c8202d red, white/warm grey, charcoal and fine lines. */
+.concierge-page{--cc-navy:#111214;--cc-blue:#c8202d;--cc-cyan:#c8202d;--cc-text:#111214;--cc-muted:#65676c;--cc-line:#e3e3e3;--cc-shadow:0 18px 38px rgba(0,0,0,.065);background:#fff}
+.concierge-main{padding-top:0}
+.concierge-hero{position:relative;width:100%;min-height:570px;padding:92px clamp(44px,6vw,112px) 58px;border:0;border-bottom:1px solid #e3e3e3;border-radius:0;background:linear-gradient(115deg,#faf9f7 0%,#fff 63%,#f6f4f2 100%);box-shadow:none;overflow:hidden}
+.concierge-hero:after{content:"";position:absolute;z-index:0;right:-150px;top:-40px;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(200,32,45,.08),transparent 68%);pointer-events:none}
+.concierge-hero-copy,.concierge-panel{position:relative;z-index:1}
+.concierge-hero-copy{min-height:430px}
+.concierge-badge{color:#c8202d}.concierge-badge span{background:#c8202d}
+.concierge-hero h1{max-width:610px;color:#111214;font-size:clamp(42px,4vw,62px);font-weight:650;line-height:1.06}
+.concierge-lead{color:#5e6065;font-size:14px;line-height:1.72}
+.concierge-points span{background:#c8202d}
+.concierge-btn{border-radius:0}
+.concierge-btn-primary{background:#c8202d;color:#fff!important;box-shadow:0 12px 26px rgba(200,32,45,.18)}
+.concierge-btn-primary:hover{background:#a91220}
+.concierge-btn-secondary{border-color:#bfc0c2;background:transparent;color:#111214}
+.concierge-panel,.ai-conversation-card{border:1px solid #e3e3e3;border-radius:0;background:#fff;box-shadow:0 18px 38px rgba(0,0,0,.065)}
+.concierge-panel-top,.ai-conversation-card>header{border-bottom:1px solid #e3e3e3;background:#f7f6f3}
+.concierge-ai-icon{border-radius:0;background:#c8202d;color:#fff}
+.concierge-status{color:#65676c}.concierge-status:before{background:#c8202d}
+.builder-body{background:#fff}
+.builder-body select{border:0;border-bottom:1px solid #c9c9c6;border-radius:0;background:transparent}
+.builder-body select:focus{border-color:#c8202d;box-shadow:0 1px 0 #c8202d}
+.builder-status-box,.builder-output{border-color:#e3e3e3;border-radius:0;background:#faf9f7}
+.builder-action{border:1px solid #c8202d;border-radius:0;background:#fff;color:#c8202d;box-shadow:none}
+.builder-action:hover{background:#c8202d;color:#fff}
+.section-kicker{color:#c8202d}
+.conversation-section,.examples-section,.direct-contact{background:#fff}
+.conversation-guide,.token-example-card{border-color:#e3e3e3;border-radius:0;background:#fff;box-shadow:none}
+.chat-messages{background:#f7f6f3}.chat-message{border-radius:0}.chat-message.user{background:#c8202d;color:#fff}
+.chat-suggestions button,.token-example-card button{border-color:#dededb;border-radius:0;background:#fff;color:#111214}
+.chat-suggestions button:hover,.token-example-card button:hover{border-color:#c8202d;color:#c8202d}
+.chat-form{background:#fff}.chat-form input{border:0;border-bottom:1px solid #c9c9c6;border-radius:0;background:transparent}.chat-form button{border-radius:0;background:#c8202d;color:#fff}
+.token-head img{border-color:#e3e3e3;border-radius:0;background:#f5f4f2}
+@media(max-width:900px){.concierge-hero{width:100%;padding:66px 24px 48px}}
