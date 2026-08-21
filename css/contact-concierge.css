@@ -22,3 +22,32 @@
 .concierge-status{color:#27705e}.concierge-status:before{background:#2a9d82}
 .builder-status-box strong{color:#27705e}
 .conversation-guide li>span{color:#d5202d}.contact-route-grid a>span,.contact-route-grid b{color:#d5202d}
+
+/* Refined exhibition treatment: black carries hierarchy; red is a precise accent. */
+.concierge-page{--cc-navy:#171717;--cc-blue:#c91f2c;--cc-cyan:#c91f2c;--cc-line:#deddd9;--cc-shadow:0 20px 55px rgba(20,20,20,.055);background:#faf9f6}
+.concierge-main{padding-top:0}
+.concierge-hero{width:min(1280px,calc(100% - 56px));padding:50px 46px;border-color:#deddd9;border-radius:0;background:#fff;box-shadow:none}
+.concierge-hero-copy{padding-left:0}
+.concierge-badge{padding:7px 0;border:0;border-radius:0;background:transparent;color:#242424}
+.concierge-badge span{width:6px;height:6px;background:#c91f2c}
+.concierge-hero h1{color:#171717;font-weight:700}
+.concierge-points span{width:17px;height:17px;background:#171717;font-size:9px}
+.concierge-btn{min-height:44px;border-radius:3px}
+.concierge-btn-primary,.builder-action,.chat-form button{background:#171717;box-shadow:none}
+.concierge-btn-primary:hover,.builder-action:hover,.chat-form button:hover{background:#c91f2c}
+.concierge-btn-secondary{border-color:#cfcfcb;background:#fff;color:#171717}
+.concierge-panel,.ai-conversation-card{border-color:#d8d7d3;border-radius:10px;box-shadow:0 14px 34px rgba(20,20,20,.06)}
+.concierge-panel-top,.ai-conversation-card>header{border-bottom-color:#e7e6e2;background:#fbfaf7}
+.concierge-ai-icon{width:32px;height:32px;border-radius:4px;background:#171717;box-shadow:none}
+.concierge-status{color:#565656}.concierge-status:before{width:6px;height:6px;background:#c91f2c;box-shadow:none}
+.builder-body{background:#fff}
+.builder-body select,.builder-status-box,.builder-output{border-color:#deddd9;border-radius:4px}
+.builder-action{border-radius:3px}
+.section-kicker{color:#c91f2c}
+.conversation-guide,.token-example-card{border-color:#deddd9;border-radius:6px;background:#fff;box-shadow:none}
+.chat-messages{background:#f7f6f2}
+.chat-message{border-radius:7px}.chat-message.user{background:#171717}
+.chat-suggestions button,.token-example-card button{border-radius:3px;background:#fff}
+.chat-form input,.chat-form button{border-radius:3px}
+.token-head img{border-radius:4px}
+@media(max-width:600px){.concierge-hero{width:min(100% - 24px,1280px);padding:26px 20px;border-radius:0}}
