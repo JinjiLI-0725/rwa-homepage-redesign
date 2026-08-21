@@ -51,3 +51,25 @@
 .chat-form input,.chat-form button{border-radius:3px}
 .token-head img{border-radius:4px}
 @media(max-width:600px){.concierge-hero{width:min(100% - 24px,1280px);padding:26px 20px;border-radius:0}}
+
+/* Warm RWA exhibition palette: ivory, burgundy and champagne stone. */
+.concierge-page{--cc-navy:#332927;--cc-blue:#8f2f3b;--cc-cyan:#a5414b;--cc-text:#332927;--cc-muted:#746966;--cc-line:#ded4ca;background:linear-gradient(180deg,#f8f4ee 0,#f4efe8 100%)}
+.concierge-hero{border-color:#ded4ca;background:radial-gradient(circle at 88% 16%,rgba(143,47,59,.075),transparent 30%),linear-gradient(135deg,#fffdfa 0,#f8f2eb 100%);box-shadow:0 24px 70px rgba(86,62,51,.075)}
+.concierge-hero h1{color:#332927}
+.concierge-badge{color:#6f2732}.concierge-badge span{background:#9c3440}
+.concierge-points span{background:#9c3440}
+.concierge-btn-primary,.builder-action,.chat-form button{background:#8f2f3b;color:#fff}
+.concierge-btn-primary:hover,.builder-action:hover,.chat-form button:hover{background:#742530}
+.concierge-btn-secondary{border-color:#d5c8bb;background:#fffaf4;color:#493d39}
+.concierge-panel,.ai-conversation-card{border-color:#d9cec3;background:#fffdfa;box-shadow:0 18px 45px rgba(87,62,51,.09)}
+.concierge-panel-top,.ai-conversation-card>header{border-bottom-color:#e5dbd1;background:#f5eee6}
+.concierge-ai-icon{background:linear-gradient(145deg,#6f2732,#a9434d);color:#fff}
+.concierge-status{color:#6e625e}.concierge-status:before{background:#a9434d}
+.builder-body{background:#fffdfa}
+.builder-body select,.builder-status-box,.builder-output{border-color:#ddd2c8;background:#fffaf5;color:#493d39}
+.section-kicker{color:#963540}
+.conversation-guide,.token-example-card{border-color:#ded4ca;background:#fffdfa}
+.chat-messages{background:#f5efe8}.chat-message.user{background:#8f2f3b}
+.chat-suggestions button,.token-example-card button{border-color:#d9cec3;background:#fffaf4;color:#6f2732}
+.chat-form{background:#fffdfa}.chat-form input{border-color:#d9cec3;background:#fffaf5}
+.token-head img{border-color:#ddd2c8;background:#f5eee6}
